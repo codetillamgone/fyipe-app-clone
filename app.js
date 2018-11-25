@@ -8,12 +8,14 @@ app.get('/', function(req, res){
 
 // GET method route
 app.get('/data', function (req, res) {
-    res.send('GET request to the homepage')
+    res.send('GET request to data route')
+    console.log("data route get request")
   })
   
   // POST method route
 app.post('/data', function (req, res) {
-    res.send('POST request to the homepage')
+    res.send('POST request to data route')
+    console.log("data route post request")
   })
 
 app.listen(8000);
