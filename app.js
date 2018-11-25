@@ -1,8 +1,8 @@
 var express = require('express');
-var router = express();
+var app = express();
 
 //First Api 
-router.get('/', function(req, res){
+app.get('/', function(req, res){
     res.send('GET request to the homepage');
 });
 
@@ -12,7 +12,8 @@ app.get('/data', function (req, res) {
   })
   
   // POST method route
-  app.post('/data', function (req, res) {
+app.post('/data', function (req, res) {
     res.send('POST request to the homepage')
   })
-  
+
+app.listen(8000);
